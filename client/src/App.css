@@ -1,0 +1,8 @@
+.alignButtons {
+  display: flex;
+  align-items: center;
+}
+
+.smol {
+  max-width: 5rem;
+}

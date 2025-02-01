@@ -1,0 +1,29 @@
+{
+  "name": "mt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "c8 --check-coverage mocha",
+    "missing-coverage": "c8 report --skip-full",
+    "pretty": "npx prettier . --write",
+    "build": "cd client && npm i && npm run build",
+    "start": "node server.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "lazy-z": "^2.0.0",
+    "regex-but-with-words": "^1.5.5"
+  },
+  "devDependencies": {
+    "c8": "^10.1.1",
+    "chai": "^5.1.2",
+    "esm": "^3.2.25",
+    "mocha": "^10.7.3",
+    "prettier": "3.3.1",
+    "sinon": "^18.0.0"
+  }
+}

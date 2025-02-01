@@ -1,0 +1,59 @@
+{
+  "name": "sap-self-service-portal",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@carbon/icons-react": "^11.42.0",
+    "@carbon/react": "^1.58.1",
+    "@carbon/styles": "^1.58.0",
+    "@testing-library/jest-dom": "^6.4.5",
+    "crypto-js": "^4.2.0",
+    "edmonds-blossom": "^1.0.0",
+    "lazy-z": "^2.0.0",
+    "prettier": "^3.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "regex-but-with-words": "^1.5.5"
+  },
+  "scripts": {
+    "build": "craco build",
+    "ci-check": "npm run format:diff",
+    "clean": "yarn cache clean && yarn install",
+    "eject": "craco eject",
+    "format": "prettier --write \"**/*.{js,md,scss}\"",
+    "format:diff": "prettier --list-different \"**/*.{js,md,scss}\"",
+    "format:staged": "prettier --write",
+    "start": "NODE_ENV=development PORT=3000 craco start",
+    "test": "craco test --watchAll=false"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-private-property-in-object": "^7.24.5",
+    "@craco/craco": "^7.1.0",
+    "@testing-library/dom": "^10.1.0",
+    "@testing-library/react": "^16.0.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "react-scripts": "^5.0.1"
+  },
+  "overrides": {
+    "react-scripts": {
+      "@svgr/webpack": "8.1.0",
+      "typescript": "5.0.2",
+      "postcss": "8.4.38"
+    }
+  }
+}
